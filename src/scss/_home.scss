@@ -1,0 +1,43 @@
+/* home page */
+
+.home-logo {
+  width: 75%;
+  padding-bottom: 20px;
+}
+
+.home-top, .home-one, .home-two {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+#placeholder_timeline {
+  margin-top: 40px;
+  border: 5px solid white;
+}
+
+.bold_font {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.home-event {
+  padding-top: 20px;
+  padding-bottom: 2.5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-top: 7px solid transparent !important;
+  border-bottom: 7px solid transparent !important;
+}
+
+.home-event:hover {
+  border-bottom: 7px solid white !important;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 7px solid white !important;
+}
+
+.subhead {
+  padding-top: 35px;
+}
