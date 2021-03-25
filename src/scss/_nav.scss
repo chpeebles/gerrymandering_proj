@@ -1,10 +1,17 @@
 /* nav */
 
-.navbar {
-  margin-bottom: 20px;
-}
-
 .nav-item {
   font-weight: bold;
   padding-right: 1.25em;
 }
+
+.nav-item {
+  a {
+    border-top: 5px solid transparent !important;
+    border-bottom: 5px solid transparent !important;
+  }
+  a:hover {
+    border-bottom: 5px solid black !important;
+  }
+}
+
