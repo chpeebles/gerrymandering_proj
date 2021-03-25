@@ -5,9 +5,9 @@
   padding-bottom: 20px;
 }
 
-.home-top, .home-one, .home-two {
-  padding-top: 50px;
-  padding-bottom: 40px;
+.home-top, .home-one, .home-two, .home-three {
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 #placeholder_timeline {
@@ -17,7 +17,22 @@
 
 .bold_font {
   font-size: 1.75em;
-  font-weight: bold;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.bold_font_2 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.subhead, #city_explainer {
+  margin-top: 20px;
+}
+
+.subhead2 {
+  margin-top: 40px;
 }
 
 .home-event {
@@ -25,6 +40,7 @@
   padding-bottom: 2.5px;
   margin-left: 25px;
   margin-right: 25px;
+  margin-bottom: 15px;
   border-top: 7px solid transparent !important;
   border-bottom: 7px solid transparent !important;
 }
@@ -34,10 +50,15 @@
   cursor: pointer;
 }
 
+.home-event > p {
+  margin-top: 10px;
+}
+
 .active {
   border-bottom: 7px solid white !important;
 }
 
-.subhead {
-  padding-top: 35px;
+.cities {
+  font-size: 1.25em;
+  font-weight: bold;
 }
