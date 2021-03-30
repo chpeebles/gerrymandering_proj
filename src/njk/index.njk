@@ -131,24 +131,26 @@
   <div class="container home-three">
     <h5>You think it’s insane? Yeahh.. no &$%!@. Check out how it impacts the community</h5>
     <br>
-    <button type="button" class="btn btn-dark btn-lg">Community Impact</button>
+    <button type="button" class="btn btn-dark btn-lg">
+      <a href="{{ relative_path }}community.html">Community Impact</a>
+    </button>
 
     <p class="bold_font_2 subhead2">Want to learn more?</p>
 
     <div class="container cities">
       <div class="row justify-content-center no-gutters">
-        <div class="col-auto home-event">
+        <a class="col-auto home-event" href="{{ relative_path }}game.html" >
           <img src="img/game_icon.png" width="100px" height="100px" alt="Game controller icon">
           <p>Games</p>
-        </div>
-        <div class="col-auto home-event">
+        </a>
+        <a class="col-auto home-event" href="{{ relative_path }}blog.html" >
           <img src="img/blog_icon.png" width="100px" height="100px" alt="Writing icon">
           <p>Blog</p>
-        </div>
-        <div class="col-auto home-event">
+        </a>
+        <a class="col-auto home-event" href="{{ relative_path }}about.html" >
           <img src="img/about_us.png" width="100px" height="100px" alt="Icon of people">
           <p>About Us</p>
-        </div>
+        </a>
       </div>
     </div>
   </div>
