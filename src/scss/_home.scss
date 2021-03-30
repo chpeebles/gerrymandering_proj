@@ -54,11 +54,15 @@
   margin-top: 10px;
 }
 
+.cities {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .active {
   border-bottom: 7px solid white !important;
 }
 
-.cities {
-  font-size: 1.25em;
-  font-weight: bold;
+#why-sect, #how-sect {
+  display: none;
 }
