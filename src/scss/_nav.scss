@@ -14,10 +14,7 @@
     border-top: 5px solid transparent !important;
     border-bottom: 5px solid transparent !important;
   }
-  a:hover {
-    border-bottom: 5px solid black !important;
-  }
-  a:active {
+  a:hover, a:active {
     border-bottom: 5px solid black !important;
   }
 }

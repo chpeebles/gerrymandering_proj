@@ -22,6 +22,7 @@
 @import "nav";
 @import "footer";
 @import "home";
+@import "game";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -52,7 +53,11 @@ body {
 }
 
 /* subhead margins */
-.subhead, .city_explainer {
+.icon_title {
+  margin-top: 10px;
+}
+
+.subhead {
   margin-top: 20px;
 }
 
