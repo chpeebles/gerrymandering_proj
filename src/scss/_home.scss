@@ -1,40 +1,7 @@
 /* home page */
-
 .home-logo {
   width: 75%;
   padding-bottom: 20px;
-}
-
-.home-top, .home-one, .home-two, .home-three {
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-
-#placeholder_timeline {
-  margin-top: 40px;
-  border: 5px solid white;
-}
-
-/* bold font styles */
-.bold_font {
-  font-size: 1.75em;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-.bold_font_2 {
-  font-size: 1.5em;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-/* subhead margins */
-.subhead, .city_explainer {
-  margin-top: 20px;
-}
-
-.subhead2 {
-  margin-top: 40px;
 }
 
 /* home event stylings */
@@ -57,6 +24,21 @@
   margin-top: 10px;
 }
 
+/* Community impact button */
+button, .cities {
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+}
+
 /* misc */
 .cities {
   font-size: 1.25em;
@@ -71,17 +53,11 @@
   display: none;
 }
 
-/* Community impact button */
-button, .cities {
-  a {
-    color: white;
-  }
-  a:hover {
-    color: white;
-    text-decoration: none;
-  }
-  a:active {
-    color: white;
-    text-decoration: none;
-  }
+#placeholder_timeline {
+  margin-top: 40px;
+  border: 5px solid white;
+}
+
+.city_explainer {
+  margin-top: 20px;
 }

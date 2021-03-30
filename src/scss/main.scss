@@ -32,3 +32,35 @@ body {
   background-image: url("../img/Background_website.png");
   color: white;
 }
+
+.sect-padding {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+/* bold font styles */
+.bold_font {
+  font-size: 1.75em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.bold_font_2 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+/* subhead margins */
+.subhead, .city_explainer {
+  margin-top: 20px;
+}
+
+.subhead2 {
+  margin-top: 40px;
+}
+
+/* header styles */
+h5 {
+  font-weight: 400;
+}
