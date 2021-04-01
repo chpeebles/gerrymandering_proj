@@ -1,0 +1,34 @@
+/* BLOG STYLES */
+
+.blog-row {
+  margin: 0px 40px;
+}
+
+.card {
+  border-radius: 25px;
+  min-width: 18rem;
+  margin-bottom: 2em !important;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.card-body {
+  p, h5 {
+    color: black;
+  }
+
+  h5 {
+    font-weight: bold;
+  }
+}
+
+.card-img-top {
+  margin-top: 15px; 
+  border-radius: 25px;
+}
