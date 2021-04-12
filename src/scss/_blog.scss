@@ -10,10 +10,6 @@
   margin-bottom: 2em !important;
 }
 
-.card:hover {
-  cursor: pointer;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -31,4 +27,21 @@ a:hover {
 .card-img-top {
   margin-top: 15px; 
   border-radius: 25px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #480C84 !important;
+}
+
+.card:hover .card-title {
+  color: white;
+}
+
+.card:hover .card-text {
+  color: white;
+}
+
+.card:hover .text-muted {
+  color: #c7b3db !important;
 }
