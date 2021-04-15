@@ -4,3 +4,8 @@ footer > p {
   font-weight: 'Medium';
   padding: 20px;
 }
+
+/* Add style to override 1 rem margin-bottom of p */
+#legal {
+  margin-bottom: 0px;
+}
