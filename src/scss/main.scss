@@ -34,9 +34,14 @@ body, html {
 .background {
   background-image: url("../img/Background_website.png");
   color: white;
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+}
+
+.background-home {
+  background-image: url("../img/Background_website.png");
+  color: white;
+  background-repeat: no-repeat;
 }
 
 .sect-padding {
