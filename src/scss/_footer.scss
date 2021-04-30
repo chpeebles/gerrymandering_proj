@@ -1,5 +1,4 @@
 /* footer */
-
 footer > p {
   font-weight: 'Medium';
   padding: 20px;
@@ -8,4 +7,9 @@ footer > p {
 /* Add style to override 1 rem margin-bottom of p */
 #legal {
   margin-bottom: 0px;
+}
+
+/* Social Icon Styling */
+.social-icon {
+  margin-right: 15px;
 }
