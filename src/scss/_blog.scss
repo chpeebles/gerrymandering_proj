@@ -29,19 +29,19 @@ a:hover {
   border-radius: 25px;
 }
 
-.card:hover {
+.card-about:hover {
   cursor: pointer;
   background-color: #480C84 !important;
 }
 
-.card:hover .card-title {
+.card-about:hover .card-title {
   color: white;
 }
 
-.card:hover .card-text {
+.card-about:hover .card-text {
   color: white;
 }
 
-.card:hover .text-muted {
+.card-about:hover .text-muted {
   color: #c7b3db !important;
 }
