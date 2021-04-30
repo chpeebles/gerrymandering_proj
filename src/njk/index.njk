@@ -12,24 +12,27 @@
 
 <div class="background-home">
   <div class="container sect-padding">
+    <br>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
-    <br>
+    <br><br>
 
     <h5>Our district lines continues to change. Check out how it has changed in Texas:</h5>
+
     <br>
     <!--<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe frameborder='0' scrolling='no' marginheight='0' marginwidth='0' title='Texas Congressional District' src='https://www.arcgis.com/apps/presentation/index.html?webmap=0c0a50d206a34bd69f71c9a589f6f628'></iframe></div>-->
 
-    <img src="img/TexasMapRedistrictingOvertheYear.gif" width="100%" height="80%" alt="Redistricting in Texas Map Gif">
+    <!--<img src="img/TexasMapRedistrictingOvertheYear.gif" width="100%" height="80%" alt="Redistricting in Texas Map Gif">-->
 
-    <p style="text-align:left" >*Note: Due to the American Civil War between 1861-1865, Texas was not part of the congressional map between 1861-1870.</p>
+    {% include "_includes/carousel.njk" %}
 
-    <br>
+    <p style="text-align:left; margin-top:0.5em;" >*Note: Due to the American Civil War between 1861-1865, Texas was not part of the congressional map between 1861-1870.</p>
 
-    <!-- add button to see in new window -->
-    <button type="button" class="btn btn-dark btn-lg">
+    <!-- button to see in new window -->
+    <button type="button" class="btn btn-dark">
       <a href="https://www.arcgis.com/apps/presentation/index.html?webmap=0c0a50d206a34bd69f71c9a589f6f628" target="_blank">View in new window</a>
     </button>
+    <br>
   </div>
 
   <div class="container sect-padding">
@@ -46,65 +49,91 @@
     </div>
 
     <div id="what-sect">
-      <p class="subhead bold_font">What is gerrymandering?</p>
+      <p class="subhead bold_font_2">What is gerrymandering?</p>
       <p>
         In the context of U.S. Elections, gerrymandering is the process of redrawing election maps in order to benefit one political party (usually the one in power). 
       </p>
-      <br><br>
+      <br>
       <img src="img/map_icon_1.png" width="100px" height="100px" alt="Map icon">
-      <p class="subhead bold_font">What is redistricting?</p>
+      <p class="subhead bold_font_2">What is redistricting?</p>
       <p>
         Redistricting is the process of redrawing the geographic district lines used to elect members of the U.S. House of Representatives (and other state lawmakers depending on the state). It is done every 10 years following the U.S. Census.  
       </p>
     </div>
 
     <div id="why-sect">
-      <p class="subhead bold_font">Why gerrymandering is done</p>
+      <p class="subhead bold_font_2">Why gerrymandering is done</p>
       <p>
-        As stated before, Gerrymandering is done to give one side a particular advantage in U.S. House Races. Unless there is found to be racial gerrymandering (the practice of skewing maps in favor of a certain race, which is illegal), gerrymandered maps stay in place for 10 years until the next round of redistricting.
+        As stated before, Gerrymandering is done to give one side a particular advantage in U.S. House Races. Unless there is found to be <strong>racial gerrymandering</strong> (the practice of skewing maps in favor of a certain race, which is illegal), gerrymandered maps stay in place for 10 years until the next round of redistricting.
       </p>
-      <br><br>
+      <br>
       <img src="img/map_icon_1.png" width="100px" height="100px" alt="Map icon">
-      <p class="subhead bold_font">Why redistricting is done</p>
+      <p class="subhead bold_font_2">Why redistricting is done</p>
       <p>
-        Redistricting is done every 10 years because the U.S. Census gives us an update on the total population. See because the House of Representatives is determined by population, states will get a certain amount of seats based on how big their population (i.e. bigger states get more seats and smaller states get less seats). When the new population totals are determined, states will either get more seats (like Texas), lose seats (like California), or stay the same (like Alabama). To account for these changes, states will redraw their geographic lines used for congressional districts. These lines will remain in place for the next decade until the next census (which makes them all the more important!).
+        Redistricting is done every 10 years because the U.S. Census gives us an update on the total population. See because the House of Representatives is determined by population, states will get a certain amount of seats based on how big their population (i.e. bigger states get more seats and smaller states get less seats). When the new population totals are determined, states will either get <em>more</em> seats (like Texas), <em>lose</em> seats (like California), or stay the same (like Alabama). To account for these changes, states will redraw their geographic lines used for congressional districts. These lines will remain in place for the next decade until the next census (which makes them all the more important!).
       </p>
     </div>
 
     <div id="how-sect">
-      <p class="subhead bold_font">How gerrymandering occurs</p>
+      <p class="subhead bold_font_2">How is gerrymandering done? </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Redistricting is a process that most states will go through (well, as long as they have more than one congressional district). However the way states redistrict their maps can actually vary depending on where you live. Here are generally the three main ways redistricting happens:
       </p>
-      <br><br>
+      <br>
+      <div class="row">
+        <p class="col-sm-4">
+          <strong>State Legislatures -</strong> In this scenario, the state legislature has full control over redistricting. Specifically here in Texas, redistricting basically plays out like passing an ordinary bill.
+        </p>
+        <p class="col-sm-4">
+          <strong>Independent Commission -</strong> However if you live in a state like California (as unlucky as that sounds), they defer the drawing of their maps to an independent commission.
+        </p>
+        <p class="col-sm-4">
+          <strong>“The Iowa Method” -</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <br>
+
       <img src="img/map_icon_1.png" width="100px" height="100px" alt="Map icon">
-      <p class="subhead bold_font">How redistricting occurs</p>
+      <p class="subhead bold_font_2">How is redistricting done?</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        There are actually three main ways a party can create a gerrymander. The most notable methods are in the form of cracking, packing and stacking.
       </p>
+      <br>
+      <div class="row">
+        <p class="col-sm-4">
+          <strong>Cracking -</strong> Cracking is the practice of spreading out a certain group of voters along the lines so that their impact is minimized.
+        </p>
+        <p class="col-sm-4">
+          <strong>Packing -</strong> Packing is the practice of cramming a certain group of voters into one district so that their overall impact on the electorate is minimized.
+        </p>
+        <p class="col-sm-4">
+          <strong>Stacking -</strong> Similar to cracking, stacking is the practice of also spreading out voters so their impact is minimized. However, stacking differs in that it gives the ...
+        </p>
+      </div>
     </div>
 
     <!-- END WHAT WHY HOW -->
     <!-- BEGIN CITES -->
 
-    <br>
+    <br><br>
 
-    <p class="subhead2 bold_font_2">Explore how gerrymandering is affecting your city</p>
+    <p class="subhead2 bold_font">Explore how gerrymandering is affecting your city</p>
     <div class="container cities">
       <div class="row justify-content-center no-gutters">
-        <div id="austin-event" class="col-auto home-event active">
+        <div id="austin-event" class="col-auto col-xs-3 home-event active">
           <img src="img/austin_icon.png" width="100px" height="100px" alt="Austin capitol icon">
           <p>Austin</p>
         </div>
-        <div id="dallas-event" class="col-auto home-event">
+        <div id="dallas-event" class="col-auto col-xs-3 home-event">
           <img src="img/dallas_icon.png" width="100px" height="100px" alt="Dallas ball icon">
           <p>Dallas</p>
         </div>
-        <div id="houston-event" class="col-auto home-event">
+        <div id="houston-event" class="col-auto col-xs-3 home-event">
           <img src="img/houston_icon.png" width="100px" height="100px" alt="Houston rocket icon">
           <p>Houston</p>
         </div>
-        <div id="sanAntonio-event" class="col-auto home-event">
+        <div id="sanAntonio-event" class="col-auto col-xs-3 home-event">
           <img src="img/san_antonio_icon.png" width="100px" height="100px" alt="San Antonio icon">
           <p>San Antonio</p>
         </div>
@@ -115,22 +144,22 @@
     <p class="city_explainer" id="austin-sect"> 
       Austin Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
       <br><br><br>
-      <img id="city" src="img/austin-map.png" width="100%" height="80%" alt="Austin Redistricting Map">
+      <img class="city-img" src="img/austin-map.png" width="100%" height="80%" alt="Austin Redistricting Map">
     </p>
     <p class="city_explainer" id="dallas-sect"> 
       Dallas Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
       <br><br><br>
-      <img id="city" src="img/dallas-fortworth.png" width="100%" height="80%" alt="Dallas Fortworth Redistricting Map">
+      <img class="city-img" src="img/dallas-fortworth.png" width="100%" height="80%" alt="Dallas Fortworth Redistricting Map">
     </p>
     <p class="city_explainer" id="houston-sect"> 
       Houston Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
       <br><br><br>
-      <img id="city" src="img/houston-map.png" width="100%" height="80%" alt="Houston Redistricting Map">
+      <img class="city-img" src="img/houston-map.png" width="100%" height="80%" alt="Houston Redistricting Map">
     </p>
     <p class="city_explainer" id="sanAntonio-sect"> 
       San Antonio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
       <br><br><br>
-      <img id="city" src="img/san-antonio-map.png" width="100%" height="80%" alt="San Antonio Redistricting Map">
+      <img class="city-img" src="img/san-antonio-map.png" width="100%" height="80%" alt="San Antonio Redistricting Map">
     </p>
   </div>
 
@@ -145,7 +174,7 @@
 
     <br><br>
 
-    <p class="bold_font subhead2">Want to learn more?</p>
+    <p class="bold_font_2 subhead2">Want to learn more?</p>
     <div class="container cities">
       <div class="row justify-content-center no-gutters">
         <a class="col-auto home-event" href="{{ relative_path }}game.html" >
