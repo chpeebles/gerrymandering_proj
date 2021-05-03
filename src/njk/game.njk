@@ -1,23 +1,92 @@
 {% extends '_templates/base.njk' %}
 
-{% block page_title %}Games | What the &$!#% is Gerrymandering ?!?{% endblock %}
+{% block page_title %}Quiz | What the &$!#% is Gerrymandering ?!?{% endblock %}
 
-{% block page_description %}A UT Digital Innovations capstone project.{% endblock %}
+{% block page_description %}Texas gerrymandering quiz for a UT Digital Innovations capstone project.{% endblock %}
 
 {% block content %}
 <div class="background">
   <div class="container sect-padding">
     <img id="game-icon" src="img/game_icon.png" width="125px" height="125px" alt="Game controller icon">
-    <p class="icon_title bold_font">Games</p>
+    <p class="icon_title bold_font">Quiz</p>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
 
     <br>
-    <h5 class="bold_font_2">Coming Soon</h5>
+    <form action="" method="" id="quiz-form">
+      <div class="card-deck subhead2">
+        <div class="card col-xs-6 col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Question 1</h5>
+            <p class="card-text" id="q1"></p>
+            <!--<h6 class="card-subtitle mb-2 text-muted" id="q1"></h6>-->
+            <input type="radio" name="q1" id="q1-true" value="true">
+            <label for="q1-true">True</label><br>
+            <input type="radio" name="q1" id="q1-false" value="false">
+            <label for="q1-false">False</label><br>
+            <h6 class="card-subtitle mb-2 text-muted subhead quiz-answer" id="q1-answer"></h6>
+          </div>
+        </div>
+
+        <div class="card col-xs-6 col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Question 2</h5>
+            <p class="card-text" id="q2"></p>
+            <!--<h6 class="card-subtitle mb-2 text-muted" id="q2"></h6>-->
+            <input type="radio" name="q2" id="q2-true" value="true">
+            <label for="q2-true">True</label><br>
+            <input type="radio" name="q2" id="q2-false" value="false">
+            <label for="q2-false">False</label><br>
+            <h6 class="card-subtitle mb-2 text-muted subhead quiz-answer" id="q2-answer"></h6>
+          </div>
+        </div>
+
+        <div class="card col-xs-6 col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Question 3</h5>
+            <p class="card-text" id="q3"></p>
+            <!--<h6 class="card-subtitle mb-2 text-muted" id="q3"></h6>-->
+            <input type="radio" name="q3" id="q3-true" value="true">
+            <label for="q3-true">True</label><br>
+            <input type="radio" name="q3" id="q3-false" value="false">
+            <label for="q3-false">False</label><br>
+            <h6 class="card-subtitle mb-2 text-muted subhead quiz-answer" id="q3-answer"></h6>
+          </div>
+        </div>
+      </div>
+
+      <!--<h5 class="bold_font_2 subhead2">Question 1</h5>
+      <div id="q1" class="subhead"></div><br>
+      <input type="radio" name="q1" id="q1-true" value="true">
+      <label for="q1-true">True</label><br>
+      <input type="radio" name="q1" id="q1-false" value="false">
+      <label for="q1-false">False</label><br>
+      <div id="q1-answer" class="subhead quiz-answer"></div><br>
+
+      <h5 class="bold_font_2 subhead2">Question 2</h5>
+      <div id="q2" class="subhead"></div><br>
+      <input type="radio" name="q2" id="q2-true" value="true">
+      <label for="q2-true">True</label><br>
+      <input type="radio" name="q2" id="q2-false" value="false">
+      <label for="q2-false">False</label><br>
+      <div id="q2-answer" class="subhead quiz-answer"></div><br>
+
+      <h5 class="bold_font_2 subhead2">Question 3</h5>
+      <div id="q3" class="subhead"></div><br>
+      <input type="radio" name="q3" id="q3-true" value="true">
+      <label for="q3-true">True</label><br>
+      <input type="radio" name="q3" id="q3-false" value="false">
+      <label for="q3-false">False</label><br>
+      <div id="q3-answer" class="subhead quiz-answer"></div><br>-->
+
+      <input class="btn btn-dark btn-lg" type = "button" value = "Submit" onclick="gradeQuiz()"/> 
+      <input class="btn btn-dark btn-lg" type="reset" value="Clear Answers">
+    </form>
     <br>
 
   </div>
 </div>
+<script src="{{ relative_path }}js/scripts.js"></script>
 {% endblock %}
