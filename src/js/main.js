@@ -102,7 +102,7 @@ let allQuestions = [
 ];
 
 let allAnswerBlurbs = [
-  "<b>True!</b> Despite being separated by over 250 miles (or almost 4 hours in Texas terms), McAllen and Seguin are both in TX-15.",
+  "<b>TRUE!</b> Despite being separated by over 250 miles (or almost 4 hours in Texas terms), McAllen and Seguin are both in TX-15.",
   "<b>FALSE!</b> That Pluckers Wing Bar is in TX-21 (represented by Republican Chip Roy), while UT Austin is in TX-25 (represented by Republican Roger Williams).",
   "<b>FALSE!</b> Because of the extraordinarily weird shape of TX-2, these two locations on the opposite sides of Houston are both represented by Republican Dan Crenshaw!",
   "<b>TRUE!</b> Thanks to the enormous size of TX-17, both the Bears and Aggies vote in the same district!",
@@ -133,6 +133,7 @@ let i;
 for (i = 0; i < 3; i++) {
   var rand_indx = Math.trunc (Math.random() * 8);
 
+  // check if question has already been added
   while ( questions.includes(allQuestions[rand_indx]) ){
     var rand_indx = Math.trunc (Math.random() * 8);
   }
