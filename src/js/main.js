@@ -102,14 +102,25 @@ let allQuestions = [
 ];
 
 let allImages = [
-  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
-  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
-  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
-  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
-  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
-  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
-  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
-  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">'
+  '<img class="card-img-top" src="img/quizImages/Q1_Question.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q2_Question.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q3_Question.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q4_Question.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q5_Question.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q6_Question.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q7_Question.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q8_Question.png" alt="">'
+];
+
+let allAnswerImages = [
+  '<img class="card-img-top" src="img/quizImages/Q1_Answers.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q2_Answers.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q3_Answers.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q4_Answers.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q5_Answers.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q6_Answers.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q7_Answers.png" alt="">',
+  '<img class="card-img-top" src="img/quizImages/Q8_Answers.png" alt="">'
 ];
 
 let allAnswerBlurbs = [
@@ -139,6 +150,7 @@ let questions = [];
 let answerBlurbs = [];
 let correctAnswers = [];
 let quizImages = [];
+let quizAnswerImages = [];
 let i;
 
 // generate 3 random, different questions
@@ -154,6 +166,7 @@ for (i = 0; i < 3; i++) {
   answerBlurbs.push( allAnswerBlurbs[rand_indx] );
   correctAnswers.push( allCorrectAnswers[rand_indx] );
   quizImages.push( allImages[rand_indx] );
+  quizAnswerImages.push( allAnswerImages[rand_indx] );
 }
 
 // populate page with random questions
@@ -200,8 +213,11 @@ function gradeQuiz() {
 
       if (i == 2) {
         document.getElementById("q1-answer").innerHTML = answerBlurbs[0];
+        document.getElementById("q1-img").innerHTML = quizAnswerImages[0];
         document.getElementById("q2-answer").innerHTML = answerBlurbs[1];
+        document.getElementById("q2-img").innerHTML = quizAnswerImages[1];
         document.getElementById("q3-answer").innerHTML = answerBlurbs[2];
+        document.getElementById("q3-img").innerHTML = quizAnswerImages[2];
         $(".quiz-answer").show();
 
         alert("Congrats! You got " + numCorrect + "/3 correct.");
