@@ -101,6 +101,17 @@ let allQuestions = [
   "The AT&T Center in San Antonio, TX and Austin-Bergstrom International Airport in Austin, TX are in the same congressional district."
 ];
 
+let allImages = [
+  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
+  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
+  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
+  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
+  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
+  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
+  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">',
+  '<img class="card-img-top" src="img/andy-about-pic.png" alt="">'
+];
+
 let allAnswerBlurbs = [
   "<b>TRUE!</b> Despite being separated by over 250 miles (or almost 4 hours in Texas terms), McAllen and Seguin are both in TX-15.",
   "<b>FALSE!</b> That Pluckers Wing Bar is in TX-21 (represented by Republican Chip Roy), while UT Austin is in TX-25 (represented by Republican Roger Williams).",
@@ -127,6 +138,7 @@ let allCorrectAnswers = [
 let questions = [];
 let answerBlurbs = [];
 let correctAnswers = [];
+let quizImages = [];
 let i;
 
 // generate 3 random, different questions
@@ -141,12 +153,16 @@ for (i = 0; i < 3; i++) {
   questions.push( allQuestions[rand_indx] );
   answerBlurbs.push( allAnswerBlurbs[rand_indx] );
   correctAnswers.push( allCorrectAnswers[rand_indx] );
+  quizImages.push( allImages[rand_indx] );
 }
 
 // populate page with random questions
 document.getElementById("q1").innerHTML = questions[0];
+document.getElementById("q1-img").innerHTML = quizImages[0];
 document.getElementById("q2").innerHTML = questions[1];
+document.getElementById("q2-img").innerHTML = quizImages[1];
 document.getElementById("q3").innerHTML = questions[2];
+document.getElementById("q3-img").innerHTML = quizImages[2];
 
 // on submit, return a list of all the answers
 function getValues() {
